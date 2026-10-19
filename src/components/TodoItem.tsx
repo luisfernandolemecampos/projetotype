@@ -21,7 +21,7 @@ const TodoItem = ({tarefas,onToggle,onDelete}:TodoItemProps) => {
          checked={tarefas.completado}
          onChange={()=>onToggle(tarefas.id)}
         />
-        <span>{tarefas.completado ? "text-slate-500": "text-slate-200"}
+        <span>{tarefas.completado}
           {tarefas.text}
         </span>
       </div>
